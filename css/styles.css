@@ -11,7 +11,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --nav-footer-colot: rgba(255, 255, 255, 0.6);
-  --primary-background-color: #ffffff;
+  --primary-background-color: #f5f4fa;;
   --secondary-backgound-color: #f5f4fa;
   --hero-footer-background: #2f303a;
 }
@@ -32,8 +32,9 @@ body {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+
 .link:hover,
-.link:focus{
+.link:focus {
   color: var(--accent-color);
 }
 
@@ -41,7 +42,7 @@ body {
   list-style: none;
 }
 
-address{
+address {
   font-style: normal;
 }
 
@@ -77,26 +78,27 @@ address{
   color: var(--accent-color);
 }
 
-.nav-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
-.contacts{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 /* Секція герой */
 .hero {
   background-color: var(--hero-footer-background);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -133,34 +135,39 @@ address{
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-.about-us-title+p{
+
+.about-us-title+p {
   color: var(--secondary-text-color);
 }
 
 /* наша команда */
-.section-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;  
-    color: var(--primary-text-color);
+.our-team {
+  background-color: var(--primary-background-color);
 }
 
-.team-title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    color:var(--primary-text-color);
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-color);
 }
-/* прописати клас на параграф
-повісити на <li> text-align: center;*/
-.team-title+p{
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center; 
-    color: var(--secondary-text-color);
+
+.list-team {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
+
+.team-title {
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.team-title+p {
+  color: var(--secondary-text-color);
+}
+
 /* Сайт портфоліо */
 
 /* Список фильтрів */
@@ -197,27 +204,28 @@ address{
   font-size: 16px;
   line-height: 1.87;
 }
+
 /* Підвал */
-.logo-footer{
+.logo-footer {
   font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #FFFFFF;
 }
 
-.bg-footer{
+.bg-footer {
   background-color: var(--hero-footer-background);
 }
 
-.address{
+.address {
   font-size: 14px;
   line-height: 1.71;
   color: #FFFFFF;
 }
-.footer-contacts{
-    font-size: 14px;
-    line-height: 1.78;
-    color: rgba(255, 255, 255, 0.6);
-}
 
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.78;
+  color: rgba(255, 255, 255, 0.6);
+}
