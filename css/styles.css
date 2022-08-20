@@ -5,6 +5,15 @@
 /* колір основного фону  #E5E5E5 */
 /* вторичний колір фону #F5F4FA; */
 /* footer background: #2F303A; */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
 :root {
   --primary-text-color: #212121;
@@ -41,15 +50,6 @@ body {
 }
 
 /* Утиліти класів */
-html{
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before{
-  box-sizing: inherit;
-}
 
 .link {
   text-decoration: none;
@@ -103,7 +103,6 @@ ul {
 /* < !-- Шапка сайта --> */
 .top-navigation{
 display: flex;
-
 }
 
 .border {
