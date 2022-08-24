@@ -103,6 +103,7 @@ ul {
 /* < !-- Шапка сайта --> */
 .top-navigation{
 display: flex;
+align-items: center;
 }
 
 .border {
@@ -111,6 +112,8 @@ display: flex;
 
 /* logo */
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -129,6 +132,19 @@ display: flex;
 .top-conection{
   display: flex;
   margin-left: 94px;
+}
+
+.top-conection >.item:not(:last-child){
+margin-right: 55px;
+}
+
+.top-contacts{
+display: flex;
+margin-left: auto;
+}
+
+.top-contacts >.item:not(:last-child){
+  margin-right: 55px;
 }
 
 .link.current {
@@ -150,7 +166,6 @@ display: flex;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
 
 
 /* Секція герой */
@@ -178,6 +193,7 @@ display: flex;
 }
 
 .hero-button {
+  padding: 10px 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 200px;
@@ -196,8 +212,21 @@ display: flex;
 }
 
 /*Наші переваги */
+.about-us-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.about-us-list >.item{
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
 .about-us-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -209,12 +238,27 @@ display: flex;
   color: var(--secondary-text-color);
 }
 
+/* Чим ми займаємось */
+.our-work-list{ 
+display: flex;
+flex-wrap: wrap;
+margin-left: -30px;
+margin-top: -30px;
+}
+
+.our-work-list > .item{
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /* наша команда */
 .our-team {
   background-color: var(--primary-background-color);
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -223,12 +267,20 @@ display: flex;
 }
 
 .list-team {
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-member {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
