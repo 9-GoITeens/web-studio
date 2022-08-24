@@ -151,13 +151,15 @@ display: flex;
   color: var(--secondary-text-color);
 }
 
+
+
 /* Секція герой */
 .hero {
   margin-right: auto;
   margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   text-align: center;
   background-color: var(--hero-footer-background);
@@ -194,6 +196,7 @@ display: flex;
 }
 
 /*Наші переваги */
+
 .about-us-title {
   font-weight: 700;
   font-size: 14px;
