@@ -107,7 +107,7 @@ align-items: center;
 }
 
 .border {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 /* logo */
@@ -174,7 +174,6 @@ margin-left: auto;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
 
 /* Секція герой */
 .hero {
@@ -250,6 +249,7 @@ margin-left: auto;
   color: var(--secondary-text-color);
 }
 
+
 /* Чим ми займаємось */
 .our-work-list{
  margin-bottom: 50px;
@@ -270,7 +270,7 @@ margin-top: -30px;
   background-color: var(--primary-background-color);
 }
 
-.section-title {
+.sections-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -350,6 +350,8 @@ margin-top: -30px;
   background-color: var(--accent-color);
   fill: #ffffff;
 }
+
+/* Постійні клієнти */
 
 
 
