@@ -50,7 +50,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Ефетивні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -126,13 +126,15 @@
         <ul class="list our-work-list">
           <li class="item-works">
             <img src="./images/img-one.jpg" alt="Планшет на столі" width="370" />
-
+            <p class="our-works-text">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
           </li>
           <li class="item-works"><img src="./images/img-two.jpg" alt="Телефон" width="370" />
+            <p class="our-works-text">МОБІЛЬНІ ЗАСТОСУНКИ</p>
 
           </li>
           <li class="item-works">
             <img src="./images/img-three.jpg" alt="Діаграма кольру на планшеті" width="370" />
+            <p class="our-works-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
 
           </li>
         </ul>
@@ -325,6 +327,13 @@
 
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" data-modal-close>X</button>
+      <p>Залиште свої дані, ми Вам зателефонуємо</p>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -24,6 +24,7 @@ html {
   --secondary-backgound-color: #f5f4fa;
   --hero-footer-background: #2f303a;
   --border-color: #eeeeee;
+  --animation: 250ms ease-in;
 }
 
 body {
@@ -55,6 +56,7 @@ body {
   text-decoration: none;
   color: inherit;
   font-style: normal;
+  transition: color var(--animation);
 }
 
 .link:hover,
@@ -158,7 +160,19 @@ ul {
 }
 
 /* Псевтоелемент */
-.nav-link.current {
+.nav-link.current::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent-color);
+}
+
+.nav-link.current{
+  position: relative;
   color: var(--accent-color);
 }
 
@@ -228,6 +242,8 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .hero-button:hover,
@@ -291,6 +307,30 @@ ul {
   flex-basis: calc((100% - 30px * 3) / 3);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.item-works{
+  position: relative;
+}
+
+.our-works-text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  min-height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 /* наша команда */
@@ -363,6 +403,7 @@ ul {
   border-radius: 50%;
   fill: #AFB1B8;
   background-color: #ffffff;
+  transition: fill var(--animation), background-color var(--animation);
 }
 
 .social-icon>.social-icon-item:not(:last-child) {
@@ -405,6 +446,7 @@ ul {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
+  transition: fill var(--animation), border var(--animation);
 }
 
 .link-client:hover,
@@ -432,10 +474,12 @@ ul {
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
+  transition: color var(--animation), cubic-bezier(0.4, 0, 0.2, 1).;
 }
 
 .button-menu:hover,
 .button-menu:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -458,6 +502,7 @@ ul {
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  transition: var(--animation), border var(--animation);
 }
 
 .description:hover,
@@ -538,6 +583,7 @@ ul {
   border-radius: 50%;
   fill: #FFFFFF;
   background: rgba(255, 255, 255, 0.1);
+  transform: color var(--animation), backround-color var(--animatiom);
 }
 
 .footer-icon-link:hover,
@@ -572,3 +618,50 @@ ul {
 .item-footer {
   margin-bottom: 10px;
 }
+
+/* Modal */
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 120;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden{
+  visibility:hidden;
+  opacity:0;
+  pointer-events:none;
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+width: 100%;
+transform: translate(-50%, -50%);
+max-width: 528px;
+min-height: 581px;
+background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.btn-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  display: block;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
