@@ -1,4 +1,12 @@
 /* Чим ми займаємось */
+.our-work{
+    display: none;
+    
+        @media screen and (min-width: 1200px) {
+        display: block;
+        }
+}
+
 .our-work__list {
     margin-bottom: 50px;
     display: flex;

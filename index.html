@@ -43,16 +43,46 @@
         </ul>
       </nav>
     </div>
+    <button class="button-mobile">
+      <svg class="icon-mobile">
+        <use href="./images/icons/sprite.svg#menu-mobile"></use>
+        <use href="./images/icons/sprite.svg#close-mobile"></use>
+      </svg>
+    </button>
   </header>
+
+  <div class="mobile-menu">
+    <ul class="list mobile-menu__list">
+      <li class="mobile-menu__item"><a href="./index.html" class="link  mobile-menu__link">Студія</a></li>
+      <li class="mobile-menu__item"><a href="./portfolio.html" class="link  mobile-menu__link">Портфоліо</a></li>
+      <li class="mobile-menu__item"><a href="" class="link  mobile-menu__link">Контакти</a></li>
+    </ul>
+    <ul class="list mobile-contacts">
+      <li class="mobile-contacts__item"><a href="tel:+380961111111" class="link mobile-contacts__tel">
+          +38 096 111 11 11</a></li>
+      <li class="mobile-contacts__item">
+        <a href="mailto:info@devstudio.com" class="link mobile-contacts__email">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+    <ul class="social-mobile list">
+      <li class="social-mobile__item"><a class="social-mobile__link" href=""></a>Instagram</li>
+      <li class="social-mobile__item"><a class="social-mobile__link" href=""></a>Twitter</li>
+      <li class="social-mobile__item"><a class="social-mobile__link" href=""></a>Facebook</li>
+      <li class="social-mobile__item"><a class="social-mobile__link" href=""></a>LinkedIn</li>
+    </ul>
+  </div>
   <!-- Головна інформація -->
   <main>
+
     <!-- Секція герой -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <h1 class="hero__title">Ефетивні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </div>
-    </section>
+    </section> -->
 
     <!-- наші переваги -->
     <section class="about-us">
@@ -323,7 +353,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="widget-blok">
         <a href="./" class="logo-footer link"><span class="logo__interactive">Web</span>Studio</a>
@@ -382,10 +412,10 @@
       </div>
 
     </div>
-  </footer>
+  </footer> -->
 
   <!-- modal -->
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <h2 class="modal__title">Залиште свої дані, ми Вам зателефонуємо</h2>
       <button class="modal__btn-close" data-modal-close>
@@ -443,7 +473,7 @@
         </button>
       </form>
     </div>
-  </div>
+  </div> -->
 
   <script src="./js/modal.js"></script>
 </body>

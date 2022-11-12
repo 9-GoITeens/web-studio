@@ -29,6 +29,9 @@
 
 
 .menu {
+    @media screen and (max-width: 767.97px) {
+           display: none;
+        }
     display: flex;
     margin-left: 94px;
 }
@@ -72,6 +75,9 @@
 /*  */
 
 .header-contacts {
+    @media screen and (max-width: 767.97px) {
+            display: none;
+        }
     display: flex;
     margin-left: auto;
 }
@@ -99,3 +105,34 @@
     margin-right: 10px;
     fill: currentColor;
 }
+
+.button-mobile{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.icon-mobile{
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    width: 100%;
+    max-width: 480px;
+    height: 796vh;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+}
+
