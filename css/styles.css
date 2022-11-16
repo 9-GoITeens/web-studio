@@ -124,6 +124,7 @@ body {
 
 /* logo */
 .logo {
+  font-weight: 700;
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
@@ -134,6 +135,12 @@ body {
 
 .logo__interactive {
   color: var(--accent-color);
+}
+@media screen and (max-width: 768px) {
+  .logo__interactive {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .logo__interactive:hover, .logo__interactive:focus {
   color: var(--accent-color);
@@ -146,6 +153,11 @@ body {
 @media screen and (max-width: 767.98px) {
   .menu {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    margin-left: 89px;
   }
 }
 
@@ -189,9 +201,20 @@ body {
   display: flex;
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
-  .header-contacts {
+@media screen and (min-width: 480px) and (max-width: 767.88px) {
+  .header-contacts .header-contacts__item {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1198.88px) {
+  .header-contacts {
+    display: inline;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1198.88px) {
+  .header-contacts .header-contacts__item {
+    margin: 0px;
   }
 }
 
@@ -217,14 +240,18 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
+@media screen and (max-width: 768px) {
+  .header-contacts__icon-contacts {
+    margin-right: 5px;
+  }
+}
 
 .button-mobile {
   position: relative;
   z-index: 120;
-  width: 40px;
-  height: 40px;
   background-color: transparent;
   border: none;
+  display: -webkit-box;
 }
 @media screen and (min-width: 768px) {
   .button-mobile {
@@ -234,8 +261,8 @@ body {
 
 .icon-mobile {
   position: absolute;
-  margin-left: 390px;
-  margin-top: -80px;
+  margin-left: 420px;
+  margin-top: -60px;
   width: 40px;
   height: 40px;
 }
@@ -263,7 +290,7 @@ body {
   padding-left: 40px;
   width: 100%;
   max-width: 480px;
-  height: 796vh;
+  height: 798vh;
   flex-direction: column;
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -288,7 +315,7 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.mobile-menu__link:hover, .mobile-menu__link:focus {
+.mobile-menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -311,7 +338,7 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.mobile-contacts__tel:hover, .mobile-contacts__tel:focus {
+.mobile-contacts__tel:focus {
   color: var(--accent-color);
 }
 
@@ -322,7 +349,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.mobile-contacts__email:hover, .mobile-contacts__email:focus {
+.mobile-contacts__email:focus {
   color: var(--accent-color);
 }
 
@@ -373,7 +400,6 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -810,10 +836,19 @@ body {
 
 /* Сайт портфоліо */
 /* Список фильтрів */
-.filter-menu {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 480px) {
+  .filter-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter-menu__button {
@@ -846,16 +881,20 @@ body {
   margin-top: -30px;
 }
 
-.projects__item:not(:lact-child) {
-  flex-basis: calc((100% - 90px) / 3);
+.projects__item {
+  flex-basis: calc((100% - 30px) / 1);
   margin-left: 30px;
   margin-top: 30px;
 }
-
-.projects__item {
-  margin-bottom: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .projects__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 /* overlay */
