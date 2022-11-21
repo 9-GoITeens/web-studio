@@ -743,17 +743,44 @@ body {
   background-color: var(--hero-footer-background);
 }
 
-.footer .container {
-  justify-content: space-between;
-  display: flex;
+@media screen and (min-width: 480px) {
+  .footer .container {
+    display: inline;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    justify-content: space-between;
+    text-align: start;
+    display: flex;
+  }
 }
 
 .widget-blok {
   flex-basis: calc((50% - 15px) / 2);
 }
+@media screen and (min-width: 768px) {
+  .widget-blok {
+    margin-bottom: 60px;
+  }
+}
 
 .widget-blok:last-child {
   flex-basis: calc(50% - 15px);
+}
+@media screen and (max-width: 480px) {
+  .widget-blok:last-child {
+    margin-top: 60px;
+  }
 }
 
 .logo-footer {
@@ -764,6 +791,23 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 480px) {
+  .address-list {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767.99px) {
+  .address-list {
+    margin-bottom: 0px;
+    width: 222px;
+  }
+}
+@media screen and (min-width: 767.99px) and (max-width: 1200px) {
+  .address-list {
+    max-width: 1200px;
+  }
 }
 
 .address-list--address {
@@ -810,7 +854,7 @@ body {
 
 /* Підпишіться на розсилку */
 .footer-form__input {
-  width: 350px;
+  width: 450px;
   border-radius: 4px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -822,6 +866,11 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   margin-right: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 350px;
+  }
 }
 
 .footer-form__button {
@@ -841,6 +890,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__button {
+    margin-top: 20px;
+  }
 }
 .footer-form__button:hover, .footer-form__button:focus {
   background-color: #188ce8;
