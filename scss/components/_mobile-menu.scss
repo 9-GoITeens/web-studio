@@ -4,20 +4,13 @@
     background-color: transparent;
     border: none;
     display: -webkit-box;
-
-    
-        &:hover,
-        &:focus {
-            fill:var(--accent-color);
+  
 
      @media screen and (min-width: 768px) {
        display: none;
                 }
 
     }
-}
-
-    
 
      
       

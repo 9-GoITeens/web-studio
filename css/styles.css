@@ -253,11 +253,8 @@ body {
   border: none;
   display: -webkit-box;
 }
-.button-mobile:hover, .button-mobile:focus {
-  fill: var(--accent-color);
-}
 @media screen and (min-width: 768px) {
-  .button-mobile:hover, .button-mobile:focus {
+  .button-mobile {
     display: none;
   }
 }
