@@ -1091,7 +1091,7 @@ body {
   border-radius: 50%;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms;
 }
 .modal__btn-close:focus, .modal__btn-close:hover {
   fill: var(--accent-color);
