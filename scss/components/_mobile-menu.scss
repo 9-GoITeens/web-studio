@@ -1,5 +1,6 @@
 .button-mobile {
    position: relative;
+   
    z-index: 120;
     background-color: transparent;
     border: none;
@@ -17,6 +18,7 @@
 
 .icon-mobile {
    position: absolute;
+
     width: 40px;
     height: 40px;
     margin-left: 420px;
@@ -30,6 +32,11 @@
 
 
     
+}
+
+.menu-close{
+    position: sticky;
+    top: 0;
 }
 
 .menu-close{

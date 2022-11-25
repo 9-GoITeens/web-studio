@@ -274,6 +274,11 @@ body {
 }
 
 .menu-close {
+  position: sticky;
+  top: 0;
+}
+
+.menu-close {
   display: none;
 }
 
