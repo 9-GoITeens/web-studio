@@ -1164,13 +1164,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__field .feedback:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .form__field .feedback::placeholder {
   font-size: 14px;
   line-height: 1.2;
